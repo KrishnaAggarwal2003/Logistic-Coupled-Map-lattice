@@ -25,24 +25,24 @@ The output of the CML simulation contains four plots:-
 
 ## <u> Extrapolation Part </u>
 
-This part of the module is based on the values of r and epsilon parameters. Unlike in standard CML above, where there was a constant value of these parameters. This part tries to simulate the CML by applying randomness in these parameter values.
+This part of the module is based on the values of r and epsilon parameters. Unlike in standard CML above, where these parameters were constant, this part tries to simulate CML by applying randomness to these parameter values.
 
 The randomness introduced is of two kinds:-
 - Dynamic Randomness
 - Lattice Site Randomness
 
-### Dynamic Randomness
-Here, the r value and epsilon are varied with iterations, where a particular iteration only will have a constant r and epsilon.
+### <u> Dynamic Randomness </u>
+Here, the r value and epsilon are varied with iterations, where a particular iteration will only have a constant r and epsilon.
 
 <b> <u>Result </u> </b>:-- The resulting plot obtained showed a time-irregular and space-regular pattern, which failed in the standard CML simulation. This indicates the importance of applying dynamic randomness in parameter values for this pattern.
 
 ![dyno](https://github.com/user-attachments/assets/b40b7d1d-e878-4b57-a40a-bf7849048498)
 
 ### Lattice Site Randomness
-Here, the r value and epsilon vary for each lattice site i.e. each lattice site has its value of r and epsilon parameter.
+Here, the r value and epsilon vary for each lattice site, i.e., each lattice site has its own r and epsilon parameter.
 
-<b> <u> Result <b> </u> :-- The resulting plot is a irregular space-time plot.
+<b> <u> Result </b> </u> :-- The resulting plot is a irregular space-time plot.
 
 ![lattice](https://github.com/user-attachments/assets/ea772a21-6af7-413d-91c4-b8c35da3bdc8)
 
-<u> <b> Note<b> </u>:-- The randomness introduced for the parameter values is probabilistic randomness. The parameter r and epsilon values are divided into two parts via the bridge_num. Please refer to <b> def change_num_prob</b> in the model below for reference.
+<u> <b> Note</b> </u>:-- The randomness introduced for the parameter values is probabilistic randomness. The parameter r and epsilon values are divided into two parts via the bridge_num. Please refer to <b> def change_num_prob</b> in the model below for reference.
